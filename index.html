@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -440,8 +441,8 @@ function WeekView(props){
   var totPct=wt.length?Math.round(totDone/wt.length*100):0;
   var allOver=tasks.filter(function(t){
     return t.wk<CW&&(t.st==="\u5f85\u8fa6"||t.st==="\u9032\u884c\u4e2d"||t.st==="\u903e\u671f");
-  });});
-  var pastOver=tasks.filter(function(t){return t.wk<CW&&(t.st==="\\u5f85\\u8fa6"||t.st==="\\u9032\\u884c\\u4e2d"||t.st==="\\u903e\\u671f");});
+  });
+  var pastOver=tasks.filter(function(t){return t.wk<CW&&(t.st==="\u5f85\u8fa6"||t.st==="\u9032\u884c\u4e2d"||t.st==="\u903e\u671f");});
   var needSupport=mStats.filter(function(m){
     var myPastOver=pastOver.filter(function(t){return t.m===m.n;}).length;
     return m.s>=8||m.over>0||myPastOver>0;
