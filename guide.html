@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六點下班中 線上工作站 — 使用指南</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background: #F8FAFC; color: #1F2937; line-height: 1.7; }
+  .hero { background: #0F172A; color: #fff; padding: 40px 24px 32px; text-align: center; }
+  .hero h1 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+  .hero p { font-size: 13px; color: #94A3B8; }
+  .container { max-width: 680px; margin: 0 auto; padding: 28px 20px 60px; }
+  .section { background: #fff; border-radius: 14px; border: 1px solid #E5E7EB; padding: 22px 24px; margin-bottom: 16px; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 800; color: #111827; margin-bottom: 16px; }
+  .section-title .icon { font-size: 18px; }
+  .step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+  .step:last-child { margin-bottom: 0; }
+  .step-num { width: 26px; height: 26px; border-radius: 50%; background: #1D4ED8; color: #fff; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .step-body { flex: 1; }
+  .step-body strong { font-size: 13px; font-weight: 700; color: #111827; display: block; margin-bottom: 3px; }
+  .step-body p { font-size: 12px; color: #6B7280; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 700; margin: 2px 2px 2px 0; }
+  .tag-blue { background: #DBEAFE; color: #1E40AF; }
+  .tag-green { background: #D1FAE5; color: #065F46; }
+  .tag-yellow { background: #FEF3C7; color: #92400E; }
+  .tag-red { background: #FEE2E2; color: #991B1B; }
+  .tag-purple { background: #EDE9FE; color: #5B21B6; }
+  .tag-gray { background: #F3F4F6; color: #374151; }
+  .tip { background: #EFF6FF; border-left: 4px solid #3B82F6; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #1E40AF; margin-top: 12px; }
+  .warn { background: #FEF9C3; border-left: 4px solid #F59E0B; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #854D0E; margin-top: 12px; }
+  .badge-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .url-box { background: #F1F5F9; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; color: #1D4ED8; text-align: center; letter-spacing: 0.3px; margin-bottom: 4px; word-break: break-all; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 10px; }
+  th { background: #F8FAFC; font-weight: 700; color: #374151; padding: 8px 10px; text-align: left; border-bottom: 2px solid #E5E7EB; }
+  td { padding: 8px 10px; border-bottom: 1px solid #F3F4F6; color: #4B5563; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+
+  /* 難易度對照表 */
+  .df-section { margin-bottom: 18px; }
+  .df-category { font-size: 13px; font-weight: 800; color: #111827; margin-bottom: 8px; padding-bottom: 5px; border-bottom: 2px solid #F1F5F9; }
+  .df-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #F9FAFB; font-size: 12px; color: #374151; }
+  .df-row:last-child { border-bottom: none; }
+  .df-badge { font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 99px; white-space: nowrap; }
+  .df-hard { background: #FEE2E2; color: #991B1B; }
+  .df-mid  { background: #FEF3C7; color: #92400E; }
+  .df-easy { background: #D1FAE5; color: #065F46; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div style="font-size:32px;margin-bottom:10px;">🕕</div>
+  <h1>六點下班中 線上工作站</h1>
+  <p>組員使用指南 — 快速上手版</p>
+</div>
+
+<div class="container">
+
+  <!-- 網址 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🔗</span>網站網址</div>
+    <div class="url-box">https://kyoyuujin-alt.github.io/DAIKOAE_2/</div>
+    <p style="font-size:12px;color:#9CA3AF;text-align:center;">用手機或電腦瀏覽器開啟，不需要安裝任何東西</p>
+  </div>
+
+  <!-- 每週流程 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📋</span>每週基本流程</div>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>點自己的名字</strong>
+        <p>首頁有六個名字卡片，點進去就是你的任務填寫頁。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>確認填寫的週別</strong>
+        <p>Header 上方有週別按鈕，預設是本週，也可以切換到其他週（可以提前填下週）。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>新增本週任務</strong>
+        <p>點「+ 新增任務」→ 填入任務內容、選品牌、選難易度 → 確認新增。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <strong>隨時更新狀態</strong>
+        <p>任務進行中隨時點狀態標籤更新，主管可以在首頁即時看到大家的進度。</p>
+      </div>
+    </div>
+    <div class="tip">💡 截止時間：每週一下班前完成填寫</div>
+  </div>
+
+  <!-- 任務狀態 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🏷️</span>任務狀態說明</div>
+    <table>
+      <tr><th>狀態</th><th>什麼時候用</th></tr>
+      <tr><td><span class="tag tag-gray">○ 待辦</span></td><td>還沒開始做</td></tr>
+      <tr><td><span class="tag tag-blue">▶ 進行中</span></td><td>正在進行</td></tr>
+      <tr><td><span class="tag tag-green">✓ 完成</span></td><td>已完成，會從逾期清單消失</td></tr>
+      <tr><td><span class="tag tag-red">! 逾期</span></td><td>手動標記逾期（過去週未完成也會自動顯示在首頁逾期清單）</td></tr>
+    </table>
+    <div class="warn">⚠ 過去週的「待辦」或「進行中」任務，會自動出現在首頁逾期清單。更新為「完成」後就會消失。</div>
+  </div>
+
+  <!-- 難易度 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">⚡</span>難易度與負荷分數</div>
+    <table>
+      <tr><th>難易度</th><th>分數</th><th>說明</th></tr>
+      <tr><td><span class="tag tag-green">●○○ 簡單</span></td><td>1 分</td><td>執行類、入稿類、例行性作業</td></tr>
+      <tr><td><span class="tag tag-yellow">●●○ 中等</span></td><td>2 分</td><td>需提案確認、多方溝通的任務</td></tr>
+      <tr><td><span class="tag tag-red">●●● 困難</span></td><td>3 分</td><td>需發想、策略規劃、大型提案</td></tr>
+    </table>
+    <p style="font-size:12px;color:#9CA3AF;margin-top:10px;">填寫頁下方會自動顯示本週難易度占比，主管可掌握工作分配狀況。</p>
+  </div>
+
+  <!-- 難易度對照表 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📖</span>工作項目難易度對照表</div>
+    <p style="font-size:12px;color:#9CA3AF;margin-bottom:16px;">不確定難易度時可以參考這裡，填入接近的項目即可。</p>
+
+    <div class="df-section">
+      <div class="df-category">🎨 素材製作相關</div>
+      <div class="df-row"><span>素材發想與切角設定</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>素材文案撰寫</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>素材提案（社內確認 → 客戶提案）</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>素材成效 RW</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>素材 Brief 及與創意溝通</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>素材修改提案</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>素材入稿</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">🌐 Landing Page</div>
+      <div class="df-row"><span>LP 架構與方向發想</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>LP 提案（社內確認 → 客戶提案）</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>LP 改訂與 CTA 修改</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>LP Coding 依賴與上線</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>LP 法務送審</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>優惠序號申請</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">📡 媒體操作運用</div>
+      <div class="df-row"><span>例行媒體入稿管理</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>媒體帳號 URL / ID 更新</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>電話迴線開通與優惠申請</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">📊 數據與成效追蹤</div>
+      <div class="df-row"><span>月次各媒體 RW</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>TVC 成效追蹤與調 CUE</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>每週媒體週報</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>Evidence 整理</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">🤝 KOL 執行相關</div>
+      <div class="df-row"><span>KOL 溝通表與 Brief 製作</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>KOL 人選探詢、篩選與提案</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>KOL 腳本確認與修改</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>KOL 成效 RW</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>KOL 上線執行與素材入稿</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>KOL 合約法務送審</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">⭐ 代言人執行相關</div>
+      <div class="df-row"><span>代言人候選整理與提案</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>代言人詢價與後續推進</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>代言人素材與 LP 對應</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">📧 CRM / EDM</div>
+      <div class="df-row"><span>CRM 名單活用 活動規劃</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>CRM 活動理解 狀況更新</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>EDM / SMS 文案提案與發送</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>定期洗出規劃與執行</span><span class="df-badge df-easy">🟢 簡單</span></div>
+      <div class="df-row"><span>愛用者名單管理與回覆</span><span class="df-badge df-easy">🟢 簡單</span></div>
+    </div>
+
+    <div class="df-section">
+      <div class="df-category">🎬 品牌製作物</div>
+      <div class="df-row"><span>話術撰寫與提案</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>TVC 腳本撰寫與提案</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>官網 Banner 發想與入稿</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>商品手冊文案與設計提案</span><span class="df-badge df-mid">🟡 普通</span></div>
+      <div class="df-row"><span>新聞稿 / 報紙廣告製作與入稿</span><span class="df-badge df-mid">🟡 普通</span></div>
+    </div>
+
+    <div class="df-section" style="margin-bottom:0;">
+      <div class="df-category">🧠 戰略與企劃</div>
+      <div class="df-row"><span>溝通切角與 Key Message 設定</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>新溝通方向發想與提案</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>媒體策略與年度戰術規劃</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>市場調查與後測執行報告</span><span class="df-badge df-hard">🔴 難</span></div>
+      <div class="df-row"><span>媒體投遞規劃</span><span class="df-badge df-hard">🔴 難</span></div>
+    </div>
+  </div>
+
+  <!-- 品牌 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🏷️</span>品牌選項</div>
+    <div class="badge-row">
+      <span class="tag tag-blue">DHA</span>
+      <span class="tag tag-green">MACA</span>
+      <span class="tag tag-yellow">EX</span>
+      <span class="tag tag-purple">芝麻明E系列</span>
+      <span class="tag tag-gray">其他案件</span>
+    </div>
+    <p style="font-size:12px;color:#9CA3AF;margin-top:10px;">不屬於特定品牌的任務（如行政、會議等）選「其他案件」。</p>
+  </div>
+
+  <!-- 帶狀案件 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📌</span>帶狀案件</div>
+    <p style="font-size:13px;color:#374151;margin-bottom:12px;">跨越多週的長期專案，主管或自己都可以登錄。</p>
+    <div class="step">
+      <div class="step-num" style="background:#0EA5E9;">1</div>
+      <div class="step-body">
+        <strong>登錄後自動產生週任務</strong>
+        <p>帶狀案件登錄後，日期範圍內每週都會自動產生一筆「[案件名稱] 本週進度」任務。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" style="background:#0EA5E9;">2</div>
+      <div class="step-body">
+        <strong>折疊顯示</strong>
+        <p>自動產生的帶狀任務在填寫頁預設折疊，點「📌 帶狀案件週任務」展開編輯。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" style="background:#0EA5E9;">3</div>
+      <div class="step-body">
+        <strong>可自由編輯</strong>
+        <p>內容、難易度、狀態都可以修改，跟一般任務完全一樣。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 公告留言板 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">💬</span>公告留言板</div>
+    <p style="font-size:13px;color:#374151;margin-bottom:12px;">在首頁底部，每週自動更新，可以發公告、留言、打氣。</p>
+    <div class="step">
+      <div class="step-num" style="background:#F59E0B;">1</div>
+      <div class="step-body">
+        <strong>先選發言身份</strong>
+        <p>點自己的名字（頭像按鈕），才能發言、按讚、回覆。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" style="background:#F59E0B;">2</div>
+      <div class="step-body">
+        <strong>選類型發言</strong>
+        <p>💬 留言 / 📢 公告 / 💪 打氣，點「+ 發言」送出。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" style="background:#F59E0B;">3</div>
+      <div class="step-body">
+        <strong>按讚與回覆</strong>
+        <p>對別人的留言按 👍，或點「回覆」針對特定留言回應，按 Enter 送出。</p>
+      </div>
+    </div>
+    <div class="tip">💡 過去週的留言可在「月別回顧」→ 點週別 Tab 查看，但無法新增留言。</div>
+  </div>
+
+  <!-- 匯出 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📅</span>匯出 Excel</div>
+    <p style="font-size:13px;color:#374151;margin-bottom:10px;">在自己的填寫頁，點綠色「📅 匯出Excel」按鈕，會下載一份 CSV 檔，包含：</p>
+    <div class="badge-row">
+      <span class="tag tag-gray">品牌</span>
+      <span class="tag tag-gray">任務內容</span>
+      <span class="tag tag-gray">難易度</span>
+      <span class="tag tag-gray">狀態</span>
+      <span class="tag tag-gray">週別</span>
+      <span class="tag tag-gray">負荷分</span>
+      <span class="tag tag-gray">難易度占比</span>
+    </div>
+    <p style="font-size:12px;color:#9CA3AF;margin-top:8px;">用 Excel 直接開啟即可，中文顯示正常。</p>
+  </div>
+
+  <!-- 月別回顧 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">📊</span>月別回顧</div>
+    <p style="font-size:13px;color:#374151;margin-bottom:10px;">點頂部「月別回顧」Tab，可以查看過去任何一週的任務紀錄與留言。</p>
+    <table>
+      <tr><th>功能</th><th>說明</th></tr>
+      <tr><td>年份切換</td><td>2024 – 2028 都可以切換</td></tr>
+      <tr><td>月份切換</td><td>點月份，自動顯示該月所有週別</td></tr>
+      <tr><td>週別 Tab</td><td>點週別看那週的全體看板與留言板</td></tr>
+      <tr><td>帶狀案件</td><td>點「帶狀案件」Tab 查看所有長期案件</td></tr>
+    </table>
+  </div>
+
+  <p style="text-align:center;font-size:12px;color:#CBD5E1;margin-top:24px;">有問題找 YUJIN 或 THOMAS 🙌</p>
+
+</div>
+</body>
+</html>
